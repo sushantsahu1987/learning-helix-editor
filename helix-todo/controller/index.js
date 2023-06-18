@@ -1,11 +1,7 @@
 const { todos } = require("../data/todos")
 
-const hello_controller = (req, resp) => {
-  resp.send({ message: "hello world" });
-}
-
-const bye_controller = (req, resp) => {
-  resp.send({ message: "good bye world" });
+const health_controller = (req, resp) => {
+  resp.send({ message: "ok" });
 }
 
 const list_of_todos_controller = (req, resp) => {
@@ -42,8 +38,7 @@ const delete_todos_controller = (req, resp) => {
 }
 
 module.exports = {
-  hello_controller,
-  bye_controller,
+  health_controller,
   list_of_todos_controller,
   add_todos_controller,
   update_todos_controller,
